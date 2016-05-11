@@ -13,9 +13,9 @@ class FaqPage extends Component {
         return fileData.map((obj,key) => {
           return (
               <Panel header={ obj.q } eventKey={ key } key={ key }>
-                <p className="faq-answer">
+                <div className="faq-answer">
                   <ReactMarkdown source={ obj.a.replace(/\n/g, '<br/>') } />
-                </p>
+                </div>
               </Panel>
             )
         })
@@ -39,6 +39,10 @@ class FaqPage extends Component {
             </div>
             );
     }
+}
+
+FaqPage.propTypes = {
+  params: PropTypes.object
 }
 
 export default FaqPage;

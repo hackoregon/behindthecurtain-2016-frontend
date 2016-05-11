@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import Photo from "./Photo.jsx";
+import Photo from './Photo.jsx';
 
 
 class PhotoGrid extends Component {
@@ -8,12 +8,12 @@ class PhotoGrid extends Component {
     var grid = this.props.photos.map(function(pData,index){
       
       return (
-        <Photo 
-          key={index} 
-          photo={pData.photo} 
-          caption={pData.caption} 
-          alt={pData.alt} 
-          imgDivClasses={pData.imgDivClasses} 
+        <Photo
+          key={index}
+          photo={pData.photo}
+          caption={pData.caption}
+          alt={pData.alt}
+          imgDivClasses={pData.imgDivClasses}
           imgClasses={pData.imgClasses}
         ></Photo>
       );
@@ -34,3 +34,7 @@ class PhotoGrid extends Component {
 
 
 export default PhotoGrid;
+
+PhotoGrid.propTypes = {
+  photos: PropTypes.array
+}

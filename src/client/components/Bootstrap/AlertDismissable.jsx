@@ -38,7 +38,8 @@ class AlertDismissable extends Component {
 }
 
 AlertDismissable.propTypes = {
-    onDismiss: PropTypes.func
+    onDismiss: PropTypes.func,
+    children: PropTypes.array
 };
 
 export default AlertDismissable;

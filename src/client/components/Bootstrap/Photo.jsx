@@ -16,4 +16,12 @@ class Photo extends Component {
   }
 }
 
+Photo.propTypes = {
+    caption: PropTypes.string,
+    photo: PropTypes.string,
+    imgDivClasses: PropTypes.string,
+    imgClasses: PropTypes.string,
+    alt: PropTypes.string
+}
+
 export default Photo;
