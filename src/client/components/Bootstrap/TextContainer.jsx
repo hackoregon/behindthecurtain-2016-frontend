@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import * as ReactBootstrap from 'react-bootstrap';
 
 class TextContainer extends Component {
   render(){
@@ -9,6 +8,11 @@ class TextContainer extends Component {
       </div>
     );
   }
+}
+
+TextContainer.propTypes = {
+    divClasses: PropTypes.string,
+    children: PropTypes.oneOfType([PropTypes.string,PropTypes.array, PropTypes.object])
 }
 
 export default TextContainer;

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
 import * as ReactBootstrap from 'react-bootstrap';
 
 class PanelGroup extends Component {
@@ -17,6 +17,10 @@ class PanelGroup extends Component {
             </ReactBootstrap.PanelGroup>
         );
     }
+}
+
+PanelGroup.propTypes = {
+    children: PropTypes.array
 }
 
 export default PanelGroup;
