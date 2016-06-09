@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import { Grid } from 'react-bootstrap';
 import SearchResultsForm from '../containers/SearchResults/SearchResultsForm.jsx';
 import BTCNav from '../components/Navigation/BTCNav.jsx';
+import Footer from '../components/Navigation/Footer.jsx'
 import {loadCampaign} from '../actions'
 
 
@@ -31,6 +32,7 @@ class CampaignsPage extends Component {
                       style={ {    marginTop: '100px',    fontWeight: '200px'} }
                       params={ this.props.params }>
                 </Grid>
+                <Footer />
             </div>
             );
     }

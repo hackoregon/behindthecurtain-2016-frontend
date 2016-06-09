@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { Grid, Col } from 'react-flexbox-grid';
 import {connect} from 'react-redux';
 import BTCNav from '../components/Navigation/BTCNav.jsx';
+import Footer from '../components/Navigation/Footer.jsx'
 import Spinner from 'react-spinkit';
 import * as json from '../data/transactions.json';
 import {fetchCampaigns} from '../actions';
@@ -173,6 +174,7 @@ class CandidatesPage extends Component {
                     {elem}
                   </Col>
                 </Grid>
+                <Footer />
             </div>
             );
     }

@@ -4,6 +4,7 @@ import SearchResultsForm from '../containers/SearchResults/SearchResultsForm.jsx
 import AboutPortraits from '../containers/AboutPortraits.jsx';
 import TextContainer from '../components/Bootstrap/TextContainer.jsx';
 import BTCNav from '../components/Navigation/BTCNav.jsx';
+import Footer from '../components/Navigation/Footer.jsx'
 
 class AboutPage extends Component {
 
@@ -113,7 +114,7 @@ class AboutPage extends Component {
 
                 </div>
 
-
+                <Footer/>
             </div>
             );
     }
